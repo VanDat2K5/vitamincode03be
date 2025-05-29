@@ -20,7 +20,7 @@ public class Buoi2 {
                 case 1 -> Bai1();
                 case 2 -> Bai2();
                 case 3 -> Bai3();
-//                case 4 -> Bai4();
+                case 4 -> Bai4();
                 case 0 -> {
                     System.out.println("Thoát chương trình.");
                     System.exit(0);
@@ -68,4 +68,11 @@ public class Buoi2 {
         }
     }
 
+    public static void Bai4(){
+        System.out.print("Nhập 1 số nguyên dương: "); int n = sc.nextInt();
+        if (n % 2 == 0)
+            System.out.println("Số chẵn");
+        else
+            System.out.println("Số lẻ");
+    }
 }
