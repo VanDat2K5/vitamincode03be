@@ -19,7 +19,7 @@ public class Buoi2 {
             switch (chon) {
                 case 1 -> Bai1();
                 case 2 -> Bai2();
-//                case 3 -> Bai3();
+                case 3 -> Bai3();
 //                case 4 -> Bai4();
                 case 0 -> {
                     System.out.println("Thoát chương trình.");
@@ -54,6 +54,17 @@ public class Buoi2 {
             case "-" -> System.out.println("a - b = "+(a-b));
             case "*" -> System.out.println("a * b = "+(a*b));
             case "/" -> System.out.println((b==0?"Ko thể chia cho 0":"a / b = "+(a/b)));
+        }
+    }
+
+    public static void Bai3(){
+        System.out.print("Nhập số tiền gốc: "); double P = sc.nextDouble();
+        System.out.print("Nhập lãi suất năm (%): "); double R = sc.nextDouble();
+        System.out.print("Nhập thời gian gửi (năm): "); int T = sc.nextInt();
+
+        for (int i = 1; i <= T; i++) {
+            double lai = (P * R * i) / 100;
+            System.out.println("Năm " + i + ": Lãi = " + lai);
         }
     }
 
