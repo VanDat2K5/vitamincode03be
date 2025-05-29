@@ -18,7 +18,7 @@ public class Buoi2 {
 
             switch (chon) {
                 case 1 -> Bai1();
-//                case 2 -> Bai2();
+                case 2 -> Bai2();
 //                case 3 -> Bai3();
 //                case 4 -> Bai4();
                 case 0 -> {
@@ -41,6 +41,20 @@ public class Buoi2 {
         System.out.println("Chu vi: " + chuVi);
         System.out.println("Diện tích: " + dienTich);
         System.out.println("Cạnh nhỏ: " + canhNho);
+    }
+
+    public static void Bai2(){
+        System.out.println("nhập a"); int a = sc.nextInt();
+        System.out.println("Nhập b"); int b = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Chọn phép tính (+;-;*;/)"); String chon =sc.nextLine();
+
+        switch (chon){
+            case "+" -> System.out.println("a + b = "+(a+b));
+            case "-" -> System.out.println("a - b = "+(a-b));
+            case "*" -> System.out.println("a * b = "+(a*b));
+            case "/" -> System.out.println((b==0?"Ko thể chia cho 0":"a / b = "+(a/b)));
+        }
     }
 
 }
